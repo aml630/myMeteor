@@ -1,4 +1,4 @@
-Template.postItem.helpers({
+Template.profiles.helpers({
   ownPost: function() {
     return this.userId == Meteor.userId();
   },
@@ -15,12 +15,5 @@ Template.postItem.helpers({
     } else {
       return 'disabled';
     }
-  }
-});
-
-Template.postItem.events({
-  'click .upvotable': function(e) {
-    e.preventDefault();
-    Meteor.call('upvote', this._id);
   }
 });
