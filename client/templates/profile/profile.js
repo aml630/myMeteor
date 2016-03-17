@@ -1,19 +1,21 @@
+
 Template.profiles.helpers({
-  ownPost: function() {
-    return this.userId == Meteor.userId();
-  },
-  domain: function() {
-    var a = document.createElement('a');
-    a.href = this.url;
-    return a.hostname;
-  },
-  upvotedClass: function() {
-    var userId = Meteor.userId();
-    //underscore libary .include
-    if (userId && !_.include(this.upvoters, userId)) {
-      return 'btn-primary upvotable';
+
+abstract: function () {
+    HTTP.call('GET', 'http://api.nytimes.com/svc/mostpopular/v2/mostemailed/all-sections/1.json?api-key=c0e4794e7b545f96cb1a4fd559135ba3:2:62311748', {}, function( error, responses) {
+    if ( error ) {
+      console.log( error );
     } else {
-      return 'disabled';
+      var ab = responses.data.results[0].abstract;
+      console.log("my ab var: " + ab);
+      Session.set("abstracts", responses.data.results[0].abstract)
+     return ab;
     }
-  }
+  });
+},
+
+singleAb: function () {
+  return Session.get("abstracts");
+}
+
 });

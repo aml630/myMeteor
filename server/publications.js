@@ -22,12 +22,7 @@ Meteor.publish('singlePost', function(id) {
   //this publish takes in an id, checks to see its a string, and finds based on that.
   return Posts.find(id);
 });
-//
-// Meteor.publish('singlePostName', function(name) {
-//   check(name, String);
-//   //this publish takes in an id, checks to see its a string, and finds based on that.
-//   return Posts.find(name);
-// });
+
 
 
 Meteor.publish('comments', function(postId) {
