@@ -19,3 +19,12 @@ Template.header.events({
     });
   }
 })
+
+Template.header.events({
+  'click .rss': function(){
+    Meteor.call('feedScrape', function (error, result) {
+      if (error)
+        return throwError(error.reason);
+    });
+  }
+})
