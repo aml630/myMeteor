@@ -2,10 +2,13 @@
   <div class="post">
     <a href="#" class="upvote btn btn-default {{upvotedClass}}">⬆</a>
     <div class="post-content">
-      <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+      <div class = "justify">
+      <img class = "thumb" src ="{{thumb}}" height = "50" width = "50">
+      </div>
+      <h3><a href="{{url}}">{{title}}</a></h3>
       <p>
         {{pluralize votes "Vote"}},
-        submitted by<a href = "{{pathFor 'profiles'}}">{{author}},</a>
+        submitted by <a href = "{{pathFor 'profiles'}}">{{author}},</a>
         <a href="{{pathFor 'postPage'}}">{{pluralize commentsCount "comment"}}</a>
         {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
       </p>

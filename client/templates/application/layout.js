@@ -13,3 +13,16 @@ Template.layout.onRendered(function() {
     }
   }
 });
+
+Template.layout.events({
+  'click .dogButton': function (){
+    $(".catStuff").hide();
+    $(".dogStuff").show();
+
+  },
+  'click .catButton': function (){
+    $(".dogStuff").hide();
+    $(".catStuff").show();
+  }
+
+})

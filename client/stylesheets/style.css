@@ -1,4 +1,4 @@
-.grid-block, .main, .post, .comments li, .comment-form {
+.grid-block, .main, .post, .comments li, .comment-form, .sidebar, .navbar {
   background: #fff;
   border-radius: 3px;
   padding: 10px;
@@ -21,7 +21,10 @@ body {
 }
 
 .navbar {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  background-color: #e6ffff;}
+
+
   /* line 32, ../sass/style.scss */
   .navbar .navbar-inner {
     border-radius: 0px 0px 3px 3px; }
@@ -76,6 +79,8 @@ body {
     display: block;
     float: right;
     margin-top: 7px; }
+
+
 
 .comments {
   list-style-type: none;
@@ -158,3 +163,25 @@ body {
   margin-bottom: 5px;
   pointer-events: auto;
 }
+
+.thumb {
+  display:block;
+  float: left;
+margin-right: 5%;
+  border-radius: 50%;
+}
+
+.justify {
+  display:block;
+  text-align: justify;
+}
+
+.sidebar {
+text-align: center;
+height: 300px;
+width: 20%;
+box-sizing: border-box;
+background-color: white;
+}
+
+/*///////////////////////////SIDEBAR TEST CSS*/

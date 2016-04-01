@@ -2,8 +2,29 @@
   <div class="container">
     {{> header}}
     {{> errors}}
+    <div class = "row">
+      <div class = "col-sm-9">
     <div id="main">
       {{> yield}}
     </div>
+  </div>
+<div class = "col-sm-3 sidebar">
+  <h2>What Kind Of Creature You Got?</h2>
+  <button class = "btn btn-info catButton">Cat</button>
+  <button class = "btn btn-success dogButton">Dog</button>
+
+<div class = "dogStuff">
+  <a class="embedly-card" href="http://www.amazon.com/Paw-Wash-Dogs-Large/dp/B005S4C8VC/ref=sr_1_3?ie=UTF8&qid=1459550290&sr=8-3&keywords=dog">The Paw Wash for Dogs, Large</a>
+  <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+</div>
+
+<div class = "catStuff">
+  <blockquote class="embedly-card" data-card-key="bbaaba0dc58f41ccb4716fd1f5d2cbe9"><h4><a href="http://www.amazon.com/Easyology-Jumbo-Size-Cat-Litter/dp/B016PHLNRA/ref=pd_sim_199_1?ie=UTF8&dpID=61FQCLUMdJL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=1HCR15X9AAJ537QC6CJA">Easyology Jumbo Size Cat Litter Mat - 47 x 36 Inch (Gray)</a></h4><p>Amazon.com : Easyology Jumbo Size Cat Litter Mat - 47 x 36 Inch (Gray) : Pet Supplies</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+</div>
+
+
+  </div>
+  </div>
   </div>
 </template>

@@ -11,20 +11,23 @@ Template.header.helpers({
   }
 });
 
-Template.header.events({
-  'click .nytimes': function(){
-    Meteor.call('addNyt', function (error, result) {
-      if (error)
-        return throwError(error.reason);
-    });
-  }
-})
-
-Template.header.events({
-  'click .rss': function(){
-    Meteor.call('feedScrape', function (error, result) {
-      if (error)
-        return throwError(error.reason);
-    });
-  }
-})
+// Template.header.events({
+//   'click .nytimes': function(){
+//     Meteor.call('addNyt', function (error, result) {
+//       if (error)
+//         return throwError(error.reason);
+//     });
+//   }
+// })
+//
+// Template.header.events({
+//   'click .rss': function(){
+//     Meteor.call('feedScrape', function (error, result) {
+//
+//       if (error)
+//         return throwError(error.reason);
+//     });
+//   }
+//
+//
+// })
