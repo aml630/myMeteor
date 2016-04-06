@@ -11,7 +11,7 @@ Template.postItem.helpers({
     var userId = Meteor.userId();
     //underscore libary .include
     if (userId && !_.include(this.upvoters, userId)) {
-      return 'btn-primary upvotable';
+      return 'upvotable';
     } else {
       return 'disabled';
     }

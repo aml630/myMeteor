@@ -1,6 +1,6 @@
 <template name="postItem">
   <div class="post">
-    <a href="#" class="upvote btn btn-default {{upvotedClass}}">⬆</a>
+    <a href="#" class="upvote glyphicon glyphicon-heart {{upvotedClass}}"></a>
     <div class="post-content">
       <div class = "justify">
       <img class = "thumb" src ="{{thumb}}" height = "50" width = "50">
@@ -13,6 +13,7 @@
         {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
       </p>
     </div>
+    {{> tweet}}
     <a href="{{pathFor 'postPage'}}" class="discuss btn btn-default">Discuss</a>
   </div>
 </template>
