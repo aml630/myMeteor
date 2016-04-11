@@ -1,6 +1,6 @@
 # Description
 
-This project was created with the Meteor stack and successfully implemented the following:
+This project was created with the Meteor stack.  It was built to allow users to both submit and discuss links from all around the internet.  It scrapes certain selected RSS feeds as well as successfully implemented the following:
 
 - Routing
 - User Accounts
@@ -46,4 +46,3 @@ with the provided script. This requires git, a C and C++ compiler,
 autotools, and scons. If you do not run this script, Meteor will
 automatically download pre-compiled binaries when you first run it.
 
-```bash
