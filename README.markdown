@@ -1,3 +1,8 @@
+##View Project Live
+
+http://petchatter.herokuapp.com/
+(Don't forget to login before Feed Search)
+
 # Description
 
 This project was created with the Meteor stack.  It was built to allow users to both submit and discuss links from all around the internet.  It scrapes certain selected RSS feeds as well as successfully implemented the following:
