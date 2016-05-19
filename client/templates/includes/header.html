@@ -19,6 +19,7 @@
         <li class="{{activeRouteClass  'bestPosts'}}">
           <a href="{{pathFor 'bestPosts'}}">Best</a>
         </li>
+        <button class="rss">ScrapeFeeds</button>
         {{#if currentUser}}
           <li class="{{activeRouteClass 'postSubmit'}}">
             <a href="{{pathFor 'postSubmit'}}">Submit Post</a>

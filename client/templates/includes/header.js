@@ -10,6 +10,15 @@ Template.header.helpers({
     return active && 'active';
   }
 });
+  Template.header.events({
+    'click .rss': function(){
+      Meteor.call('feedScrape', function (error, result) {
+        if (error)
+          return throwError(error.reason);
+      });
+    }
+  });
+
 
 // Template.header.events({
 //   'click .nytimes': function(){
@@ -20,14 +29,7 @@ Template.header.helpers({
 //   }
 // })
 //
-// Template.header.events({
-//   'click .rss': function(){
-//     Meteor.call('feedScrape', function (error, result) {
-//
-//       if (error)
-//         return throwError(error.reason);
-//     });
-//   }
+
 //
 //
 // })
